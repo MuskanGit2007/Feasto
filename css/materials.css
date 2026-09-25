@@ -1,0 +1,57 @@
+.materials-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.materials-container h2 {
+  text-align: center;
+  color: #e23744;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.material-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.material-card:hover {
+  transform: translateY(-8px);
+}
+
+.material-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.material-card h3 {
+  margin: 15px 0 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.material-card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .materials-container {
+    margin: 40px 15px;
+  }
+}

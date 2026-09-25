@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomato | Checkout</title>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Tomato 🍅</div>
+        <ul class="nav-links">
+          <li><a href="/pages/order.html">Order</a></li>
+          <li><a href="/pages/stores.html">All Stores</a></li>
+          <li><a href="/pages/status.html">Delivery Status</a></li>
+          <li><a href="/pages/checkout.html">Checkout</a></li>
+          <li><a href="/pages/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="checkout-container">
+      <h2>Checkout</h2>
+
+      <section class="order-summary">
+        <h3>Order Summary</h3>
+        <ul>
+          <li>Margherita Pizza x2 <span>₹500</span></li>
+          <li>Veg Cheese Burger x1 <span>₹200</span></li>
+          <li>French Fries x1 <span>₹150</span></li>
+        </ul>
+        <p class="total">Total: ₹850</p>
+      </section>
+
+      <section class="payment-section">
+        <h3>Payment Details</h3>
+        <form class="payment-form">
+          <label for="card-name">Name on Card</label>
+          <input type="text" id="card-name" placeholder="John Doe" required />
+
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+            required
+          />
+
+          <label for="expiry-date">Expiry Date</label>
+          <input type="month" id="expiry-date" required />
+
+          <label for="cvv">CVV</label>
+          <input
+            type="password"
+            id="cvv"
+            placeholder="123"
+            maxlength="3"
+            required
+          />
+
+          <button type="submit" class="pay-btn">Pay Now</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">Tomato 🍅</div>
+        <p>&copy; 2025 Tomato. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/checkout.html">Checkout</a></li>
+          <li><a href="/pages/material.html">Material</a></li>
+          <li><a href="/pages/status.html">Delivery Status</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

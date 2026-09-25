@@ -1,0 +1,179 @@
+/* common.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e23744;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e23744;
+}
+
+/* Footer */
+.footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e23744;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Mobile nav links grid */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    list-style: none;
+    text-align: left;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Pop up Modal Style */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #e23744;
+}
+
+.modal-content p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #444;
+}
+
+.modal-buttons button {
+  margin: 0 12px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#agreeBtn {
+  background-color: #e23744;
+  color: white;
+}
+
+#agreeBtn:hover {
+  background-color: #b02a3a;
+}
+
+#cancelBtn {
+  background-color: #ccc;
+  color: #444;
+}
+
+#cancelBtn:hover {
+  background-color: #999;
+  color: white;
+}
